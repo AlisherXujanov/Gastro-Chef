@@ -1,0 +1,22 @@
+$green: #64D370;
+$green-transparent: #26F03A1A;
+$text-white-color: #F5FAFF;
+$text-dark-color: #020202;
+$red: #FC3766;
+$shadow: rgba(86, 86, 86, 1);
+
+
+
+@mixin linkBoxShadow() {
+  box-shadow: 0px 0px 30px 0px $shadow;
+  -webkit-box-shadow: 0px 0px 30px 0px $shadow;
+  -moz-box-shadow: 0px 0px 30px 0px $shadow;
+}
+
+@mixin flexbox() {
+  // Not implemented yet
+}
+
+@mixin btnHover() {
+  // Not implemented yet
+}

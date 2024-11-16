@@ -1,15 +1,21 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="about-page-wrapper">
+    <Heading>
+      Здравствуйте! Меня зовут <span class="green">Кобылинский Кирилл</span>,
+      и я являюсь <span class="green">основателем GastroChef.</span>
+    </Heading>
+    <p>This is the about page</p>
   </div>
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
+<script>
+import Heading from '@/components/common/Heading.vue';
+export default {
+  name: 'AboutView',
+  components: {
+    Heading,
+  },
 }
-</style>
+</script>
+
+<style lang="scss" scoped></style>
