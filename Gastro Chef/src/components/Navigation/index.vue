@@ -16,6 +16,7 @@
 <script>
 import { RouterLink } from 'vue-router'
 import GastroChefLogo from './GastroChefLogo.vue'
+
 export default {
   name: 'Navigation',
   components: {
