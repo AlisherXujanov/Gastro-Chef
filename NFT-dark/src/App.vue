@@ -1,26 +1,32 @@
 <template>
-  <LandingView />
-  <CreatorsView />
+    <header>
+        <Navigation />
+    </header>
+    <main>
+        <RouterView />
+    </main>
+    <footer>
+        <Footer />
+    </footer>
 </template>
 
 <script>
-import { RouterLink, RouterView } from 'vue-router'
-import LandingView from './views/LandingView.vue'
-import CreatorsView from './views/CreatorsView.vue'
+import { RouterView } from 'vue-router'
+import Navigation from "@/components/navigation/Nav.vue"
+import Footer from "@/components/navigation/Footer.vue"
 
 export default {
-  name: 'App',
-  components: {
-    RouterLink,
-    RouterView,
-    LandingView,
-    CreatorsView,
-  },
-  data() {
-    return {
-      // ...
-    }
-  },
+    name: 'App',
+    components: {
+        RouterView,
+        Navigation,
+        Footer
+    },
+    data() {
+        return {
+            // ...
+        }
+    },
 }
 </script>
 

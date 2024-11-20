@@ -26,21 +26,21 @@ export default {
 
 <style lang="scss" scoped>
 button {
-  border: 2px solid $yellow;
+  border: 1px solid $yellow;
   color: $white;
   font-weight: bold;
   cursor: pointer;
   margin: 5px;
   transition: 0.2s;
+  background-color: transparent;
 
   &.sm {
-    font-size: 1rem;
-    padding: 5px 10px;
+    font-size: 1em;
   }
 
   &.lg {
-    font-size: 1.5rem;
-    padding: 10px 20px;
+    font-size: 1.2em;
+    padding: 20px 40px;
   }
 
   &:hover {

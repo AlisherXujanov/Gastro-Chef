@@ -1,4 +1,23 @@
+// ---------------------------------------------------
+// VARIABLES
 $yellow: #FFCE4E;
 $red: #E03054;
 $black: #000000;
 $white: #FFFFFF;
+
+// ---------------------------------------------------
+// @media
+$br-sm: 576px;
+$br-md: 768px;
+$br-lg: 992px;
+$br-xl: 1200px;
+
+// ---------------------------------------------------
+// MIXINS
+@mixin flexbox($direction: row, $justify: center, $align: center, $gap: 10px) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}

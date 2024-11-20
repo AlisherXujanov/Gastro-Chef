@@ -17,7 +17,26 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/CreatorsView.vue'),
     },
+    {
+      path: '/explore',
+      name: 'explore',
+      component: () => import('../views/ExploreView.vue'),
+    },
+    {
+      path: '/community',
+      name: 'community',
+      component: () => import('../views/CommunityView.vue'),
+    },
   ],
+  linkActiveClass: 'active',
+  scrollBehavior: (to, from, savedPosition) => {
+    // with this, we can remember where the scroll was
+    // when we go back to the previous page
+    if (savedPosition) {
+      return savedPosition
+    }
+    return { top: 0 }
+  }
 })
 
 export default router
